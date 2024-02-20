@@ -3,47 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Assignment - February 5th, 2024</title>
+    <title>Aun's Calculator</title>
     
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="tablet">
-    <h1>Calculator</h1>
+  
+<div class="tablet_scr" align="right">
+    <h1 id="display">0</h1>
 </div>
-<div class="tablet_h">
 <table>
   <tr>
     <td>
-        <input type="button" class="btn" value="AC" onClick="">
-        <input type="button" class="btn" value="+" onClick="">
-        <input type="button" class="btn" value="-" onClick="">
-        <input type="button" class="btn" value="X" onClick="">
+        <input type="button" class="btn" value="AC" onClick="clrdata()">
+        <input type="button" class="btn" value="<" onClick="deldata()">
+        <input type="button" class="btn" value="+" onClick="enter('+')">
+        <input type="button" class="btn" value="-" onClick="enter('-')">
     </td>
   </tr>
   <tr>
     <td>
-        <input type="button" class="btn" value="1" onClick="">
-        <input type="button" class="btn" value="2" onClick="">
-        <input type="button" class="btn" value="3" onClick="">
-        <input type="button" class="btn" value="/" onClick="">
+        <input type="button" class="btn" value="1" onClick="enter(1)">
+        <input type="button" class="btn" value="2" onClick="enter(2)">
+        <input type="button" class="btn" value="3" onClick="enter(3)">
+        <input type="button" class="btn" value="X" onClick="enter('*')">
     </td>
   </tr>
   <tr>
     <td>
-        <input type="button" class="btn" value="4" onClick="">
-        <input type="button" class="btn" value="5" onClick="">
-        <input type="button" class="btn" value="6" onClick="">
-        <input type="button" class="btn" value="." onClick="">
+        <input type="button" class="btn" value="4" onClick="enter(4)">
+        <input type="button" class="btn" value="5" onClick="enter(5)">
+        <input type="button" class="btn" value="6" onClick="enter(6)">
+        <input type="button" class="btn" value="/" onClick="enter('/')">
     </td>
   </tr>
   <tr>
     <td>
-        <input type="button" class="btn" value="7" onClick="">
-        <input type="button" class="btn" value="8" onClick="">
-        <input type="button" class="btn" value="9" onClick="">
-        <input type="button" class="btn" value="0" onClick="">
+        <input type="button" class="btn" value="7" onClick="enter(7)">
+        <input type="button" class="btn" value="8" onClick="enter(8)">
+        <input type="button" class="btn" value="9" onClick="enter(9)">
+        <input type="button" class="btn" value="." onClick="enter('.')">
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <input type="button" class="btn" value="0" onClick="enter(0)">
+        <input type="button" class="btn" value="00" onClick="enter('00')">
+        <input type="button" class="btn_ans" value="=" onClick="calcdata()">
     </td>
   </tr>
 </table>
